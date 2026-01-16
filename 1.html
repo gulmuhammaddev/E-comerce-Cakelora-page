@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAKEORA - Sweet Delights</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">CAKLORA</div>
+        
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#shop">Order</a></li>
+            <li><a href="#explain">Ingredent</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <h3>PREMIUM BAKERY</h3>
+            <h1>Taste the Magic of <br> CAKEORA</h1>
+            <a href="#shop" class="btn-primary">ORDER NOW</a>
+        </div>
+    </header>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="image-column">
+                    <img src="./assects/1.png" alt="Delicious Chocolate Cake">
+                </div>
+                <div class="text-column">
+                    <span class="sub-heading">Our Story</span>
+                    <h2>Baking Sweet Memories Since 2020</h2>
+                    <p>
+                        Welcome to our bakery, where every cake tells a delicious story. 
+                        We believe that a celebration is incomplete without the perfect dessert. 
+                        Our cakes are handcrafted using the finest Belgian chocolate, fresh cream, 
+                        and a whole lot of passion.
+                    </p>
+                    <p>
+                        Whether it's a birthday, anniversary, or just a craving, we ensure 
+                        every bite is a melt-in-your-mouth experience. Taste the difference 
+                        of premium ingredients and artistic design.
+                    </p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section class="category-section" id="menu">
+    <div class="container">
+        <div class="section-header">
+            <span class="sub-title">Menu</span>
+            <h2 class="title">Shop By Category</h2>
+        </div>
+
+        <div class="category-grid">
+            <div class="cat-card">
+                <div class="cat-img">
+                    <img src="./assects/8.png" alt="Birthday Cakes">
+                </div>
+                <div class="cat-content">
+                    <h3>Birthday Cakes</h3>
+                </div>
+            </div>
+
+            <div class="cat-card">
+                <div class="cat-img">
+                    <img src="./assects/5.png" alt="Cupcakes">
+                </div>
+                <div class="cat-content">
+                    <h3>Cupcakes</h3>
+                </div>
+            </div>
+
+            <div class="cat-card">
+                <div class="cat-img">
+                    <img src="./assects/1.png" alt="Chocolates">
+                </div>
+                <div class="cat-content">
+                    <h3>Chocolates</h3>
+                </div>
+            </div>
+
+            <div class="cat-card">
+                <div class="cat-img">
+                    <img src="./assects/6.png" alt="Donuts">
+                </div>
+                <div class="cat-content">
+                    <h3>Straberry-cake</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="products container" id="shop">
+        <h2 class="section-title">Our Best Sellers</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="./assects/7.png" alt="Chocolate Cake">
+                <h4>Velvet Chocolate Truffle</h4>
+                <p class="price">PKR 1500</p>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="./assects/9.png" alt="Strawberry Cake">
+                <h4>Pink Strawberry Blast</h4>
+                <p class="price">PKR 1200</p>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="./assects/3.png" alt="Cupcakes">
+                <h4>Assorted Cupcakes (6pcs)</h4>
+                <p class="price">PKR 900</p>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="./assects/10.png" alt="Cheesecake">
+                <h4>New York Cheesecake</h4>
+                <p class="price">PKR 2500</p>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="ingredients-section" id="explain">
+    <div class="container">
+        <div class="section-header">
+            <span class="sub-title">Why We Are Special</span>
+            <h2 class="title">Made With Premium Ingredients</h2>
+        </div>
+
+        <div class="ingredients-grid">
+            <div class="ing-card">
+                <div class="icon-box">🍫</div>
+                <h3>Belgian Chocolate</h3>
+                <p>We use only 100% pure imported Belgian cocoa to ensure a rich and intense chocolate flavor in every bite.</p>
+            </div>
+
+            <div class="ing-card">
+                <div class="icon-box">🥛</div>
+                <h3>Fresh Dairy</h3>
+                <p>Our cakes are baked with farm-fresh milk and heavy whipping cream for that perfect moist texture.</p>
+            </div>
+
+            <div class="ing-card">
+                <div class="icon-box">🥚</div>
+                <h3>Organic Eggs</h3>
+                <p>We believe in quality. We use free-range organic eggs that make our sponges fluffy and soft.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="contact-us" id="contact">
+        <div class="contact-box">
+            <h2>Order Your Cake</h2>
+            <p>Fill out the form below to place a custom order.</p>
+            
+            <form action="#">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="Which cake do you want?" required></textarea>
+                </div>
+                <button type="submit">Send Request</button>
+            </form>
+        </div>
+    </section>
+
+  <!-- Footer Start -->
+<footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-logo">
+      <h2>TAKIORA</h2>
+      <p>Decorate your cakes</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email: info@takiora.com</p>
+      <p>Phone: +92 300 0000000</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 TAKIORA. All Rights Reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
